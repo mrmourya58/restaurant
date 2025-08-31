@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spice Delight Restaurant</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>🍽Spice story Bistro Restaurant</h1>
+    <p>Delicious Food, Warm Ambience</p>
+  </header>
+
+  <nav>
+    <a href="#starters">Starters</a>
+    <a href="#main-course">Main Course</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#drinks">Drinks</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Starters -->
+    <h2 id="starters">Starters</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="photos/paneer tikka.jpg" alt="Paneer Tikka" />
+        <h3>Paneer Tikka</h3>
+        <p>Grilled cottage cheese marinated in Indian spices.</p>
+        <span class="price">₹180</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/veg roll.jpg" alt="Veg Spring Rolls" />
+        <h3>Veg Spring Rolls</h3>
+        <p>Crispy rolls stuffed with fresh veggies.</p>
+        <span class="price">₹150</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/samosa.jpg" alt="Samosa" />
+        <h3>Samosa</h3>
+        <p>Classic crispy snack with spicy potato filling.</p>
+        <span class="price">₹60</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/honey chilli potato.jpg" alt="Honey Chilli Potato" />
+        <h3>Honey Chilli Potato</h3>
+        <p>Fried potato tossed in sweet & spicy sauce.</p>
+        <span class="price">₹160</span>
+      </div>
+    </div>
+
+    <!-- Main Course -->
+    <h2 id="main-course">Main Course</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="photos/butter chiken.jpg" alt="Butter Chicken" />
+        <h3>Butter Chicken</h3>
+        <p>Chicken cooked in creamy tomato gravy.</p>
+        <span class="price">₹320</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/veg briyani.jpg" alt="Veg Biryani" />
+        <h3>Veg Biryani</h3>
+        <p>Fragrant rice with fresh vegetables & spices.</p>
+        <span class="price">₹250</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/dal makhani.jpg" alt="Dal Makhani" />
+        <h3>Dal Makhani</h3>
+        <p>Slow-cooked black lentils with butter & cream.</p>
+        <span class="price">₹220</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/chicken curry.jpg" alt="Chicken Curry" />
+        <h3>Chicken Curry</h3>
+        <p>Traditional chicken in spicy Indian curry.</p>
+        <span class="price">₹280</span>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <h2 id="desserts">Desserts</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="photos/gulab jamun.jpg" alt="Gulab Jamun" />
+        <h3>Gulab Jamun</h3>
+        <p>Sweet fried dumplings soaked in sugar syrup.</p>
+        <span class="price">₹100</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/chocolate brownie.jpeg" alt="Chocolate Brownie" />
+        <h3>Chocolate Brownie</h3>
+        <p>Rich chocolate brownie with ice cream.</p>
+        <span class="price">₹180</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/rasmalai.jpg" alt="Rasmalai" />
+        <h3>Rasmalai</h3>
+        <p>Soft cheese balls soaked in saffron milk.</p>
+        <span class="price">₹130</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/icecream.jpg" alt="Ice Cream" />
+        <h3>Ice Cream</h3>
+        <p>Choice of vanilla, chocolate, or mango.</p>
+        <span class="price">₹90</span>
+      </div>
+    </div>
+
+    <!-- Drinks -->
+    <h2 id="drinks">Drinks</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="photos/mango lassi.jpg" alt="Mango Lassi" />
+        <h3>Mango Lassi</h3>
+        <p>Refreshing mango yogurt drink.</p>
+        <span class="price">₹120</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/cold coffee.png" alt="Cold Coffee" />
+        <h3>Cold Coffee</h3>
+        <p>Creamy chilled coffee with ice cream.</p>
+        <span class="price">₹150</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/lemonade.jpg" alt="Lemonade" />
+        <h3>Lemonade</h3>
+        <p>Fresh lemon drink with mint.</p>
+        <span class="price">₹90</span>
+      </div>
+      <div class="menu-item">
+        <img src="photos/masala chai.jpg" alt="Masala Chai" />
+        <h3>Masala Chai</h3>
+        <p>Spiced Indian tea served hot.</p>
+        <span class="price">₹50</span>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact" id="contact">
+      <h2>📞 Book a Table / Contact Us</h2>
+      <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+        <textarea rows="4" id="message" placeholder="Your Message / Reservation Details"></textarea>
+        <img src="photos/scanner.jpg" alt="QR Scanner" />
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Spice Delight Restaurant | Designed for Project</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
